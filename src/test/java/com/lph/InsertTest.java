@@ -10,7 +10,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.lph.dao.UserMapper;
 import com.lph.entity.User;
-
+/**
+ * 测试插入一行数据
+ * @author 86152
+ *
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class InsertTest {
@@ -20,9 +24,9 @@ public class InsertTest {
 	@Test
 	public void insert() {
 		User user = new User();
-		user.setName("刘明强");
+		user.setRealName("刘明强");
 		user.setAge(31);
-		user.setManagerId(12312312323L);
+		user.setManagerId(1087982257332887553L);
 		user.setCreateTime(LocalDateTime.now());
 		int rows = userMapper.insert(user);
 		System.out.println(rows);

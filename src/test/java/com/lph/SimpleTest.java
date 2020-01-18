@@ -10,6 +10,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.lph.dao.UserMapper;
 import com.lph.entity.User;
+/**
+ * ≤‚ ‘∆’Õ®≤È—Ø
+ * @author 86152
+ *
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SimpleTest {
