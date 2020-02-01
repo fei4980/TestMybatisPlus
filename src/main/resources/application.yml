@@ -11,4 +11,15 @@ logging:
     com.mp.dao: trace
   pattern:
     console: '%p%m%n'
-    
+
+# 如果要用到xml形式，这里配置接口对应的xml路径,如果是多模块项目要加上classpath*（加载多个jar包下的xml文件）
+mybatis-plus:
+  mapper-locations:
+  - com/lph/mapper/*   # 多模块： classpath*:com/lph/mapper/*.xml
+  # 主键的全局策略，通过id-type设置
+  global-config: 
+    db-config: 
+      id-type: id-worker
+  # 如果需要mp的其它配置，可以引入mp的配置文件
+  config-location: classpath:mybatis-config.xml
+  

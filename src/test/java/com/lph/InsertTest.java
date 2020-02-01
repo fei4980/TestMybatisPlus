@@ -24,12 +24,13 @@ public class InsertTest {
 	@Test
 	public void insert() {
 		User user = new User();
-		user.setRealName("刘明强");
+		user.setName("刘明强");
 		user.setAge(31);
 		user.setManagerId(1087982257332887553L);
 		user.setCreateTime(LocalDateTime.now());
 		int rows = userMapper.insert(user);
 		System.out.println(rows);
+		System.out.println(user.getId());//插入成功后会回显，即可自动拿到id
 		
 	}
 }
