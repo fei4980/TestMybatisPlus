@@ -38,6 +38,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
         <!--Mybatis-Plus启动器-->
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -49,6 +50,12 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!-- p6spy依赖引入  执行SQL分析打印 -->
+        <dependency>
+		  <groupId>p6spy</groupId>
+		  <artifactId>p6spy</artifactId>
+		  <version>3.8.2</version>
+		</dependency>
   </dependencies>
   <build>
     <finalName>testMybatisPlus</finalName>
